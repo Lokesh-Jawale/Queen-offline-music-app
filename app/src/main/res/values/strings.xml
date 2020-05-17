@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Queen</string>
+    <string name="playbutton">Play</string>
+    <string name="pausebutton">pause</string>
+    <string name="stopbutton">stop</string>
+    <string name="lastbutton"><![CDATA[<]]></string>
+    <string name="nextbutton"><![CDATA[>]]></string>
+    <string name="channel_name">musicName</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A" >
+
+    <ImageView
+        android:id="@+id/musicImage"
+        android:layout_width="350dp"
+        android:layout_height="330dp"
+        android:layout_above="@id/musicName"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.87"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="40dp"
+        tools:src="@drawable/br1square" />
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playpausebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:textColor="#FFFF"
+        android:textSize="25sp"
+        tools:text="I want to break free" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="154dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/progressBar"
+        tools:text="1:30"
+        android:textSize="15sp"
+        android:textColor="#FFFF" />
+
+    <SeekBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playpausebutton"
+        tools:progress="40"
+        android:progressTint="#FFFF"
+        android:progressBackgroundTint="#B0757171"
+        android:progressBackgroundTintMode="src_over"
+        android:thumbTint="#FFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/progressBar"
+        tools:text="-2:34"
+        android:textSize="15sp"
+        android:textColor="#FFFF" />
+
+    <ImageButton
+        android:id="@+id/playpausebutton"
+        style="@android:style/Widget.DeviceDefault.ActionBar.TabView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_pause_circle_filled_black_24dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/skipnextbutton"
+        style="@android:style/Widget.DeviceDefault.ActionBar.TabView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toRightOf="@+id/playpausebutton"
+        android:src="@drawable/ic_skip_next_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/skippreviousbutton"
+        style="@android:style/Widget.DeviceDefault.ActionBar.TabView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toLeftOf="@+id/playpausebutton"
+        android:src="@drawable/ic_skip_previous_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/shufflebutton"
+        style="@android:style/Widget.DeviceDefault.ActionBar.TabView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toLeftOf="@+id/skippreviousbutton"
+        android:src="@drawable/ic_shuffle_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/repeatbutton"
+        style="@android:style/Widget.DeviceDefault.ActionBar.TabView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toRightOf="@+id/skipnextbutton"
+        android:src="@drawable/ic_repeat_one_black_24dp" />
+
+</RelativeLayout>
